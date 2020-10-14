@@ -1,5 +1,8 @@
 'use strict';
 
+// в цьому випадку ланцюжок прототипів, а не копія властивостей прототипів.
+//Тобто у FlyingRobot в прототипі лише 2 функції, але в прототипі прототипу (в прото:)) всі інші 5 від BaseRobot.
+
 function BaseRobot(name, weight, coords, chipVersion) {
   this.name = name;
   this.weight = weight;
